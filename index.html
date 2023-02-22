@@ -1,0 +1,18 @@
+
+<iframe id="myFrame"
+    allow="microphone;"
+    width="350"
+    height="430"
+    src="https://console.dialogflow.com/api-client/demo/embedded/11c6eb36-8b86-4e93-b971-b51885e58e54">
+</iframe>
+
+<button onclick="hello()">Hi</button>
+
+<script>
+   function hello()
+   {
+    var iframe = document.getElementById("myFrame");
+    var elmnt = iframe.contentWindow.document.getElementById("server-response").innerText;
+    console.log(elmnt)
+   }
+    </script>
